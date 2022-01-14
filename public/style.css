@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+    background-color: #e5e5e5;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.hide {
+    display: none;
+}
+
+.green__letters {
+    color: #6EFFCF;
+}
+
+.auth__container,
+.reg__container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorization,
+.registration {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 35rem;
+    background-color: #fff;
+}
+
+.registration {
+    min-height: 50rem;
+}
+
+.authorization {
+    min-height: 40rem;
+}
+
+#auth__title,
+#reg__title {
+    min-height: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+
+
+.login__container,
+.registr__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registr__container {
+    margin-top: 75px;
+}
+
+.login__container {
+    margin-top: 100px;
+
+}
+
+.login__cont,
+.registr__cont {
+    display: flex;
+    flex-direction: column;
+}
+
+#access {
+    color: crimson;
+    padding-top: 1rem;
+    align-self: center;
+}
+
+/* #token {
+    position: absolute;
+    align-self: flex-end;
+    margin-bottom: -10rem;
+} */
+
+#log,
+#pass,
+#mail,
+#pass1,
+#pass2,
+#name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    height: 5rem;
+    width: 20rem;
+    border: none;
+    border-bottom: solid 1px;
+    border-image: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%);
+    border-image-slice: 1;
+    transition: all 0.1s ease;
+}
+
+#log::placeholder,
+#pass::placeholder,
+#mail::placeholder,
+#pass1::placeholder,
+#pass2::placeholder,
+#name::placeholder {
+    color: rgb(153, 160, 175);
+    transition: all 0.3s ease;
+    font-size: 15px;
+    /* opacity: 1; */
+    /* transition: opacity 0.3s ease; */
+}
+
+
+#log:focus,
+#pass:focus,
+#mail:focus,
+#pass1:focus,
+#pass2:focus,
+#name:focus {
+    outline: none;
+    border-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border-image-slice: 1;
+}
+
+#log:focus::placeholder,
+#pass:focus::placeholder,
+#mail:focus::placeholder,
+#pass1:focus::placeholder,
+#pass2:focus::placeholder,
+#name:focus::placeholder {
+    /* opacity: 0; */
+    transform: translateY(-30px);
+    /* margin-le: 100px; */
+}
+
+#btnLogin,
+#btnLogout,
+#btnRegistr {
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 30px;
+    border: none;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    color: white;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 10px;
+    transition: all;
+}
+
+
+
+.btn-mouseover {
+    cursor: pointer;
+    animation: animation-btn 0.3s;
+    animation-fill-mode: both;
+}
+
+.btn-mouseout {
+    color: red;
+    background-color: red;
+    background: none;
+    animation: animation-btn2 0.3s;
+}
+
+.logout__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registr_container,
+#auth_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+@keyframes animation-btn {
+    0% {
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    10% {
+        background-image: linear-gradient(120deg, #e0c3fc 10%, #8ec5fc 100%);
+    }
+
+    20% {
+        background-image: linear-gradient(120deg, #e0c3fc 20%, #8ec5fc 100%);
+    }
+
+    30% {
+        background-image: linear-gradient(120deg, #e0c3fc 30%, #8ec5fc 100%);
+    }
+
+    40% {
+        background-image: linear-gradient(120deg, #e0c3fc 40%, #8ec5fc 100%);
+    }
+
+    50% {
+        background-image: linear-gradient(120deg, #e0c3fc 50%, #8ec5fc 100%);
+    }
+
+    60% {
+        background-image: linear-gradient(120deg, #e0c3fc 60%, #8ec5fc 100%);
+    }
+
+    70% {
+        background-image: linear-gradient(120deg, #e0c3fc 70%, #8ec5fc 100%);
+    }
+
+    80% {
+        background-image: linear-gradient(120deg, #e0c3fc 80%, #8ec5fc 100%);
+    }
+
+    90% {
+        background-image: linear-gradient(120deg, #e0c3fc 90%, #8ec5fc 100%);
+    }
+
+    100% {
+        background-image: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
+    }
+}
+
+@keyframes animation-btn2 {
+    100% {
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    90% {
+        background-image: linear-gradient(120deg, #e0c3fc 10%, #8ec5fc 100%);
+    }
+
+    80% {
+        background-image: linear-gradient(120deg, #e0c3fc 20%, #8ec5fc 100%);
+    }
+
+    70% {
+        background-image: linear-gradient(120deg, #e0c3fc 30%, #8ec5fc 100%);
+    }
+
+    60% {
+        background-image: linear-gradient(120deg, #e0c3fc 40%, #8ec5fc 100%);
+    }
+
+    50% {
+        background-image: linear-gradient(120deg, #e0c3fc 50%, #8ec5fc 100%);
+    }
+
+    40% {
+        background-image: linear-gradient(120deg, #e0c3fc 60%, #8ec5fc 100%);
+    }
+
+    30% {
+        background-image: linear-gradient(120deg, #e0c3fc 70%, #8ec5fc 100%);
+    }
+
+    20% {
+        background-image: linear-gradient(120deg, #e0c3fc 80%, #8ec5fc 100%);
+    }
+
+    10% {
+        background-image: linear-gradient(120deg, #e0c3fc 90%, #8ec5fc 100%);
+    }
+
+    0% {
+        background-image: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
+    }
+}
+
+.shake-horizontal {
+    -webkit-animation: shake-horizontal 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-horizontal 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+    }
+
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+
+    40%,
+    60% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+
+    80% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
+    }
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+    }
+
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+
+    40%,
+    60% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+
+    80% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
+    }
+}
