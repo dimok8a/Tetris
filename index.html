@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <script src="public/main.js"> </script>
+    <script src="public/MD5.js"></script>
+    <script src="public/Auth.js"></script>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="auth__container">
+        <div class="authorization">
+            <div id="auth__title">Авторизация</div>
+            <div class="login__container">
+                <div class="login">
+                    <div class="login__cont">
+                        <input type="text" placeholder="Логин" id="log">
+                        <input type="password" placeholder="Пароль" id="pass">
+                        <button id="btnLogin">Войти</button>
+                    </div>
+                </div>
+                <div id="access"></div>
+                <div id="token"></div>
+                <div class="logout hide">
+                    <div class="logout__container hide">
+                        <button id="btnLogout">Выйти</button>
+                    </div>
+                </div>
+                <div id="registr_container">
+                    <a href="public/registration/registration.html" id="registr_link">Регистрация |</a>
+                    <a href="public/lobby/lobby.html" id="lobby_link">| Лобби</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
