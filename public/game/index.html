@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="app/style.css" />
+    <link rel="shortcut icon" href="app/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="navbar">
+                <div id="options_container">
+                    <input type="checkbox" id="options_checkbox">
+                    <img class="navbar_icon" id="options_icon" ondragstart="return false" src="app/options.png" alt="">
+                </div>
+                <div id="pause_container">
+                    <input type="checkbox" id="pause_checkbox">
+                    <img class="navbar_icon" id="pause_icon" ondragstart="return false" src="app/pause.png">
+                </div>
+                <div id="restart_container">
+                    <img class="navbar_icon" id="goBack" ondragstart="return false" src="app/exit.png" alt="">
+                </div>
+                <!-- <div id="light_switch_container">
+                    <div id="lightSwitch">
+                        <input type="checkbox" class="checkbox" id="darkMode" value="unchecked" />
+                        <label for="darkMode" id="darkLabel" class="checkboxLabel">Темная тема</label>
+                    </div>
+                </div> -->
+            </div>
+        </header>
+        <div class="condition"></div>
+        <main>
+            <div class="games_container">
+                <div id="gamer_container">
+                    <canvas id="game_canvas1"></canvas>
+                </div>
+                <div id="gamer2_container">
+                    <canvas id="game_canvas2"></canvas>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="Game.js"></script>
+
+    <!-- <script src="app/main.js"></script> -->
+    <script src="app/Field.js"></script>
+    <script src="app/Shape.js"></script>
+    <script src="app/Tetris.js"></script>
+    <script src="secondPlayer/SecondField.js"></script>
+
+</body>
+
+</html>

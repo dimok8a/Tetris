@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow-x: hidden;
+    background-color: #C8E7DF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: #41A362;
+}
+
+header h1::selection {
+    background-color: #119485;
+    color: #1F4D2E;
+}
+
+.exit_container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.exit_container input {
+    width: 100%;
+    height: 2rem;
+    background-color: #20B2AA;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid #14716C;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.offers_container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers_container input {
+    border-radius: 15px;
+
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_container input {
+    width: 10rem;
+    height: 2rem;
+    background-color: #0F97FF;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F0F8FF;
+    border: 1px solid #0F56FF;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#hourglass_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#hourglass_container img {
+    width: 50px;
+}
+
+.view_offers_container {
+    width: 100%;
+    height: 100%;
+}
+
+.avalible_offers {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.offer_card {
+    font-family: 'Roboto', sans-serif;
+    width: 12rem;
+    height: 16rem;
+    /* border: 2px solid #949283; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.accept_offer {
+    text-align: center;
+}
+
+.accept_offer input {
+    width: 7rem;
+    height: 2rem;
+    background-color: #60AD86;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F0F8FF;
+    border: 1px solid #2E5341;
+    cursor: pointer;
+}
+
+.offer_name {
+    color: #023e8a;
+    word-break: break-all;
+
+    padding: 10px;
+}
